@@ -104,6 +104,7 @@ class ModelTrainer:
 
             #Print best score
             predicted = best_model.predict(X_test)
+            #print(best_model_name)
             r2 = r2_score(y_test,predicted)
             return r2
 
